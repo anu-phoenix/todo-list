@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 77vh;
+}
+.content
+{
+    margin: 7% auto;
+    background: white;
+    width: 30%;
+    height: 85%;
+    border-radius: 50px;
+    padding: 20px;
+}
+.todo
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.work
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-left: 31px;
+    margin-top: 5%;
+    /* text-align: center; */
+}
+.total
+{
+    top: auto;
+    display: flex;
+    margin: 20px;
+    /* margin-left: 113px; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+.inputbox
+{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+#dabba
+{
+    width: 210px;
+    margin-left: 30px;
+    height: 27px;
+    font-size: medium;
+    border-radius: 3px;
+    border-color: #ccc;
+    border-width: 1px;
+}
+.inputbox button
+{
+    width: 40px;
+    color: black;
+    background-color: rgb(196, 244, 253);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.comlist
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+}
+.list
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.list li
+{
+    margin: 1%;
+    background-color: rgb(196, 244, 253);
+    width: 90%;
+    height: 25%;
+    padding: 1.5%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.list li span
+{
+    background: red;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 1%;
+    transition: all 0.3 ease;
+}
+.footer button
+{
+    position: absolute;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(196, 244, 253);
+    border: none;
+    left: 690px;
+    top: 240px;
+    border-radius: 7px;
+}

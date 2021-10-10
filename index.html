@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To-do List</title>
+</head>
+<body background="./images/annie-spratt-pKpipZVVEC0-unsplash.jpg">
+    <div class="content">
+        <h1 class="todo">To-do List</h1>
+        <p class="work">Work to be added:</p>
+        <div class="inputbox">
+            <input type="text" id="dabba" placeholder="Enter the work to be done..." autofocus>
+            <button id="add"><i class="fa fa-plus"></i></button><br>
+        </div>  
+        <span class="total"><span id="count">0</span>&nbsp;task pending...</span>
+        <div class="comlist">
+            <ul class="list" id="list" style="list-style-type:none;">
+                <!-- <li>First task <span>Delete</span></li> -->
+            </ul>
+        </div>
+        <div class="footer">
+            <button id="cbt">Clear all</button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
