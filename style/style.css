@@ -9,111 +9,140 @@
     padding: 0;
     box-sizing: border-box;
 }
-body
+html,body
 {
     width: 100%;
-    height: 77vh;
+    height: 100%;
 }
+
+body
+{
+    background-size: 100%;
+    padding-top: 7%;
+}
+
 .content
 {
-    margin: 7% auto;
     background: white;
-    width: 30%;
-    height: 85%;
+    width: 22rem;
+    height: 24rem;
+    margin: auto;
     border-radius: 50px;
-    padding: 20px;
 }
 .todo
 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding: 7%;
 }
 .work
 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    margin-left: 31px;
-    margin-top: 5%;
-    /* text-align: center; */
-}
-.total
-{
-    top: auto;
-    display: flex;
-    margin: 20px;
-    /* margin-left: 113px; */
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
+    padding-left: 11%;
 }
 .inputbox
 {
-    width: 85%;
     display: flex;
     justify-content: space-around;
-    margin-top: 2%;
+    padding-top: 3%;
+    padding-left: 5%;
+    height: 10%;
 }
 #dabba
 {
-    width: 210px;
-    margin-left: 30px;
-    height: 27px;
+    display: inline-block;
     font-size: medium;
     border-radius: 3px;
     border-color: #ccc;
     border-width: 1px;
+    padding: 2%;
+    padding-right: 5%;
 }
 .inputbox button
 {
-    width: 40px;
     color: black;
     background-color: rgb(196, 244, 253);
     border: none;
     cursor: pointer;
     border-radius: 3px;
+    height: 100%;
+    width: 13%;
+}
+.pending
+{
+    display: flex;
+    height: 10%;
+    padding-top: 2%;
+}
+.total
+{
+    top: auto;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding-top: 2%;
+    padding-left: 11%;
+}
+#cbt
+{
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(196, 244, 253);
+    border: none;
+    border-radius: 7px;
+    height: 90%;
+    width: 20%;
+    margin-left: 27%;
+    margin-top: 1%;
 }
 .comlist
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 50%;
     overflow-y: auto;
+    height: 39%;
+    width: 88%;
+    margin: 4% auto;
 }
 .list
 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: space-between;
 }
 
 .list li
 {
-    margin: 1%;
     background-color: rgb(196, 244, 253);
-    width: 90%;
-    height: 25%;
-    padding: 1.5%;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    /* overflow: hidden; */
+    margin: 1%;
+    padding: 2%;
+    
 }
 
 .list li span
 {
     background: red;
+    cursor: pointer;
     margin-left: auto;
-    cursor: pointer;
     padding: 1%;
-    transition: all 0.3 ease;
+    border-radius: 10%;
+    display: none;
 }
-.footer button
-{
-    position: absolute;
-    padding: 10px;
-    cursor: pointer;
-    background-color: rgb(196, 244, 253);
-    border: none;
-    left: 690px;
-    top: 240px;
-    border-radius: 7px;
+
+
+
+
+
+@media (max-width:600px) {
+    .content{
+        height: 43rem;
+    }
+    .list li span
+    {
+        display: inline-block;
+    }
 }

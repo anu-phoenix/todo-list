@@ -10,7 +10,7 @@ addbutton.addEventListener('click',function(){
     }
     else
     {
-        document.getElementById(`list`).innerHTML+=`<li class="tlist">${task}<span onclick="dlt(this)">Delete</span></li>`;
+        document.getElementById(`list`).innerHTML+=`<li class="tlist" onmouseover="dlthov(this)" onmouseout="dltout(this)">${task}<span onclick="dlt(this)">Delete</span></li>`;
         document.getElementById(`dabba`).value=``;
         count++;
         document.getElementById(`count`).innerHTML=count;
@@ -44,3 +44,19 @@ clearbt.addEventListener('click',function(){
     count=0;
     document.getElementById(`count`).innerHTML=count;
 });
+
+function dlthov(c)
+{
+    let e=c.childNodes;
+    console.log(e);
+    let f=e[1];
+    f.style.display='inline-block';
+}
+
+function dltout(c)
+{
+    let e=c.childNodes;
+    console.log(e);
+    let f=e[1];
+    f.style.display='none';
+}
